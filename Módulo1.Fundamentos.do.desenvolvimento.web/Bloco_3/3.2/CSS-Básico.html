@@ -4,22 +4,46 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
-        h1{font-size: 65px;}
+        h1{
+          color: orange;
+          font-size: 65px;
+          font-family: sans-serif;
+          text-align: center;
+        }
         
-        h1{color: orange;}
-        
-        ul{background-color: aqua;}
+        ul{
+          background-color: aqua;
+          text-decoration: underline;
+          font-style: italic;
+          line-height: 200%;
+          }
 
-        .Lista{background-color: aquamarine;}
+        .Lista{
+          background-color: aquamarine;
+        }
+
+        p{
+          font-weight:600px;
+          font-size: 3em;
+          text-align: center;
+        }
+
+        body{
+          font-size: 16px;
+        }
+          #Amarelo{background-color: yellow;}
+          #Vermelho{background-color: red;}
+          #Marrom{background-color: brown;}
+
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
     <p class="Lista">Qual é a sua cor favorita?</p>
     <ul class="Lista">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="Amarelo">Amarelo</li>
+      <li id="Vermelho">Vermelho</li>
+      <li id="Marrom">Marrom</li>
     </ul>
   </body>
 </html>

@@ -1,9 +1,51 @@
-.Espace{
-  max-width: 30%;
+.Espace {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
 }
 
-.Navegador{
-    background-color: aquamarine;
-    padding: 20px;
+a{
+    text-decoration: none;
+    color: aliceblue;
     
+}
+
+.Navegador {
+  background-color: #00263e;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+h1 {
+  color: aliceblue;
+}
+
+.navegação{
+    display: inline-block;
+    padding: 20px 15px 20px;
+    position: relative;
+}
+
+body{
+    background-color:aliceblue;
+}
+
+.links{
+    background-color: #00263e;
+}
+
+footer{
+    text-align: center;
+}
+  
+#Espaçamento{
+    padding-left: 20px;
+    padding-right: 20px;
 }

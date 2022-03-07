@@ -38,14 +38,30 @@
 
 // Exercício 4
 
-const n = -1;
+// const n = -1;
 
-if (n > 0) {
-  console.log("positive");
+// if (n > 0) {
+//   console.log("positive");
+// }
+// else if (n < 0) {
+//   console.log("negative");
+// }
+// else {
+//   console.log("zero")
+// }
+
+// Exercício 5
+
+const a = 30;
+const b = 30;
+const c = 10;
+
+if (a + b + c === 180) {
+  console.log(true);
 }
-else if (n < 0) {
-  console.log("negative");
+else if (a || b || c < 0) {
+  console.log("Erro! Ângulo negativo.");
 }
 else {
-  console.log("zero")
+  console.log(false);
 }

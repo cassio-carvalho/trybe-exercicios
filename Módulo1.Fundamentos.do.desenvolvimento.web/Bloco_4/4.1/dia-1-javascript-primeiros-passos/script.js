@@ -147,16 +147,36 @@
 
 // Exercício 10
 
-const custo = 100;
-const custoTotal = custo + custo * 0.2;
-const venda = 200;
-const quantidade = 1000;
+// const custo = 100;
+// const custoTotal = custo + custo * 0.2;
+// const venda = 200;
+// const quantidade = 1000;
 
-if (custo < 0 || custoTotal < 0 || venda < 0) {
-  console.log("Erro! Valor incorreto.")
+// if (custo < 0 || custoTotal < 0 || venda < 0) {
+//   console.log("Erro! Valor incorreto.")
+// }
+// else {
+//   console.log("O lucro de 1.000un vendidas é:", (venda - custoTotal) * quantidade)
+// }
+
+// Exercício 11
+
+const salarioBruto = 3000;
+let inss = null;
+let ir = null;
+let salarioLiquido = null;
+
+if (salarioBruto <= 1556.94) {
+  inss = salarioBruto * 0.08;
+}
+else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+  inss = salarioBruto * 0.09;
+}
+else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+  inss = salarioBruto * 0.11;
 }
 else {
-  console.log("O lucro de 1.000un vendidas é:", (venda - custoTotal) * quantidade)
+  inss = salarioBruto + 570.88;
 }
 
-
+console.log(inss)

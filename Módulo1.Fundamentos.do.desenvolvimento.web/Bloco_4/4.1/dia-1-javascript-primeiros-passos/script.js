@@ -50,18 +50,45 @@
 //   console.log("zero")
 // }
 
-// Exercício 5
+// // Exercício 5
 
-const a = 30;
-const b = 30;
-const c = 120;
+// const a = 30;
+// const b = 30;
+// const c = 120;
 
-if (a + b + c === 180) {
-  console.log(true);
+// if (a + b + c === 180) {
+//   console.log(true);
+// }
+// else if (a < 0 || b < 0 || c < 0) {
+//   console.log("Erro! Ângulo negativo.");
+// }
+// else {
+//   console.log(false);
+// }
+
+// Exercício 6
+
+let peca = "BISPO";
+let result = peca.toLowerCase()
+
+if (result === "bispo") {
+  console.log("diagonais");
 }
-else if (a < 0 || b < 0 || c < 0) {
-  console.log("Erro! Ângulo negativo.");
+else if (result === "peao") {
+  console.log("frente");
+}
+else if (result === "rainha") {
+  console.log("todos os lados");
+}
+else if (result === "rei") {
+  console.log("todos os lados, 1 casa");
+}
+else if (result === "cavalo") {
+  console.log("em L");
+}
+else if (result === "torre") {
+  console.log("linha");
 }
 else {
-  console.log(false);
+  console.log("Erro. Peça não encontrada")
 }

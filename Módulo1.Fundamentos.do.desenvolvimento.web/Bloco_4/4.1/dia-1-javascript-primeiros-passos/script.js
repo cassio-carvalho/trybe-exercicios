@@ -163,7 +163,7 @@
 
 const salarioBruto = 3000;
 let inss = null;
-let salarioInss = null;
+let salarioBase = null;
 let ir = null;
 let salarioLiquido = null;
 
@@ -180,12 +180,23 @@ else {
   inss = 570.88;
 }
 
-salarioInss = salarioBruto - inss
+salarioBase = salarioBruto - inss
 
-console.log(salarioInss)
+// console.log(salarioInss)
 
-// if (salarioBruto <= 1903.98) {
-//   ir = 0;
-// }
-// else if (salarioBruto )
-
+if (salarioBase <= 1903.98) {
+  ir = 0;
+}
+else if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
+  ir = (salarioBase * 0.075) - 142.8;
+}
+else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
+  ir = (salarioBase * 0.15) - 354.80;
+}
+else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
+  ir = (salarioBase * 0.225) - 636.13;
+}
+else {
+  ir = (salarioBase * 0.275) - 869.36;
+}
+console.log(ir)

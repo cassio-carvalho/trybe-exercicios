@@ -199,4 +199,6 @@ else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
 else {
   ir = (salarioBase * 0.275) - 869.36;
 }
-console.log(ir)
+// console.log(ir)
+salarioLiquido = salarioBase - ir;
+console.log("O valor de salário líquido é ", salarioLiquido)

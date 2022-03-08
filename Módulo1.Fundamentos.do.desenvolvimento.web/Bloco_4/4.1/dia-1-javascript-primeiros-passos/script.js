@@ -68,27 +68,53 @@
 
 // Exercício 6
 
-let peca = "BISPO";
-let result = peca.toLowerCase()
+// let peca = "BISPO";
+// let result = peca.toLowerCase()
 
-if (result === "bispo") {
-  console.log("diagonais");
+// if (result === "bispo") {
+//   console.log("diagonais");
+// }
+// else if (result === "peao") {
+//   console.log("frente");
+// }
+// else if (result === "rainha") {
+//   console.log("todos os lados");
+// }
+// else if (result === "rei") {
+//   console.log("todos os lados, 1 casa");
+// }
+// else if (result === "cavalo") {
+//   console.log("em L");
+// }
+// else if (result === "torre") {
+//   console.log("linha");
+// }
+// else {
+//   console.log("Erro. Peça não encontrada")
+// }
+
+// Exercício 7
+
+const nota = 10;
+
+if (nota > 90 && nota <= 100) {
+  console.log("Nota A");
 }
-else if (result === "peao") {
-  console.log("frente");
+else if (nota >= 80 && nota < 90) {
+  console.log("Nota B");
 }
-else if (result === "rainha") {
-  console.log("todos os lados");
+else if (nota >= 70 && nota < 80) {
+  console.log("Nota C");
 }
-else if (result === "rei") {
-  console.log("todos os lados, 1 casa");
+else if (nota >= 60 && nota < 70) {
+  console.log("Nota D");
 }
-else if (result === "cavalo") {
-  console.log("em L");
+else if (nota >= 50 && nota < 60) {
+  console.log("Nota E");
 }
-else if (result === "torre") {
-  console.log("linha");
+else if (nota < 50 && nota > 0) {
+  console.log("Nota F");
 }
 else {
-  console.log("Erro. Peça não encontrada")
+  console.log("Erro! Nota inválida.")
 }

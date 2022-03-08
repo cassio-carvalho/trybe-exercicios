@@ -134,13 +134,29 @@
 
 // Exercício 9
 
-const a = 1;
-const b = 2;
-const c = 2;
+// const a = 1;
+// const b = 2;
+// const c = 2;
 
-if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0) {
-  console.log(true);
+// if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0) {
+//   console.log(true);
+// }
+// else{
+//   console.log(false);
+// }
+
+// Exercício 10
+
+const custo = 100;
+const custoTotal = custo + custo * 0.2;
+const venda = 200;
+const quantidade = 1000;
+
+if (custo < 0 || custoTotal < 0 || venda < 0) {
+  console.log("Erro! Valor incorreto.")
 }
-else{
-  console.log(false);
+else {
+  console.log("O lucro de 1.000un vendidas é:", (venda - custoTotal) * quantidade)
 }
+
+

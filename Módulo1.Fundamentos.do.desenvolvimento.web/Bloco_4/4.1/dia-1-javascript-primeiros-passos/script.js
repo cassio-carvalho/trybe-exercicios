@@ -54,12 +54,12 @@
 
 const a = 30;
 const b = 30;
-const c = 10;
+const c = 120;
 
 if (a + b + c === 180) {
   console.log(true);
 }
-else if (a || b || c < 0) {
+else if (a < 0 || b < 0 || c < 0) {
   console.log("Erro! Ângulo negativo.");
 }
 else {

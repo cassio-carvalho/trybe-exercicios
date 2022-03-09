@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
 
 //  // Exercicio 1
 
@@ -28,16 +28,29 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 4
 
-let soma = 0;
-let media = 0;
+// let soma = 0;
+// let media = 0;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//     soma += numbers[i];
+//   }
+//   media = soma / numbers.length;
+//   if (media > 20) {
+//     console.log("Valor maior que 20");
+//   }
+//   else {
+//     console.log("Valor menor que 20");
+//   }
+
+// Exercício 5
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let maiorNum = 0;
+let numero = 0;
 
 for (let i = 0; i < numbers.length; i += 1) {
-    soma += numbers[i];
-  }
-  media = soma / numbers.length;
-  if (media > 20) {
-    console.log("Valor maior que 20");
-  }
-  else {
-    console.log("Valor menor que 20");
-  }
+  numero = numbers[i];
+  maiorNum = Math.max(maiorNum, numero)
+}
+console.log(maiorNum)

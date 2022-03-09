@@ -1,5 +1,3 @@
-
-
 //  // Exercicio 1
 
 //  for (let i = 0; i < numbers.length; i += 1) {
@@ -90,9 +88,20 @@
 
 // Exercício 8
 
+// let numeros = [];
+
+// for (let i = 1; i < 26; i += 1) {
+//   numeros.push(i);
+// }
+// console.log(numeros);
+
+// Exercício 9
+
 let numeros = [];
 
-for (i = 1; i < 26; i += 1) {
+for (let i = 1; i < 26; i += 1) {
   numeros.push(i);
 }
-console.log(numeros)
+for (let z = 0; z < numeros.length; z += 1) {
+  console.log(numeros[z] / 2);
+}

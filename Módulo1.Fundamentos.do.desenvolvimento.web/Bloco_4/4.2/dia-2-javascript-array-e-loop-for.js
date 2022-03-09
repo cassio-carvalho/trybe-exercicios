@@ -77,13 +77,22 @@
 
 // Exercício 7
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let menorNum = numbers[0];
-let numero = 0;
+// let menorNum = numbers[0];
+// let numero = 0;
 
-for (let i = 0; i < numbers.length; i += 1) {
-  numero = numbers[i];
-  menorNum = Math.min(menorNum, numero);
+// for (let i = 0; i < numbers.length; i += 1) {
+//   numero = numbers[i];
+//   menorNum = Math.min(menorNum, numero);
+// }
+// console.log(menorNum)
+
+// Exercício 8
+
+let numeros = [];
+
+for (i = 1; i < 26; i += 1) {
+  numeros.push(i);
 }
-console.log(menorNum)
+console.log(numeros)

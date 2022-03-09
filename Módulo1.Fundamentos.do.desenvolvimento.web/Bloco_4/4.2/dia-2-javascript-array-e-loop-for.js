@@ -62,7 +62,7 @@
 
 // for (let i = 0; i < numbers.length; i += 1) {
 //   numero = numbers[i];
-//   if (numero % 2 != 0) {
+//   if (numero % 2 !== 0) {
 //     impares += 1;
 //   }
 // }

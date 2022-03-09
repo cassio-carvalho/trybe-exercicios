@@ -97,11 +97,32 @@
 
 // Exercício 9
 
-let numeros = [];
+// let numeros = [];
 
-for (let i = 1; i < 26; i += 1) {
-  numeros.push(i);
+// for (let i = 1; i < 26; i += 1) {
+//   numeros.push(i);
+// }
+// for (let z = 0; z < numeros.length; z += 1) {
+//   console.log(numeros[z] / 2);
+// }
+
+// Bônus
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+position = null;
+
+for (let i = 1; i < numbers.length; i += 1) {
+  for (let z = 0; z < numbers.length - 1; z += 1) {
+    if (numbers[i] < numbers [z]) {
+      let position = numbers[i];
+      numbers[i] = numbers[z];
+      numbers[z] = position;
+      console.log(position);
+    }
+  }
 }
-for (let z = 0; z < numeros.length; z += 1) {
-  console.log(numeros[z] / 2);
-}
+
+// for (let y = 0; y < numbers.length; y += 1) {
+//     console.log(numbers[y]);
+//   }
+

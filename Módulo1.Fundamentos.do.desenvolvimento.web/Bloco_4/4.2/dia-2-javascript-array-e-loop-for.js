@@ -44,13 +44,33 @@
 
 // Exercício 5
 
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// let maiorNum = 0;
+// let numero = 0;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//   numero = numbers[i];
+//   maiorNum = Math.max(maiorNum, numero)
+// }
+// console.log(maiorNum)
+
+// Exercício 6
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let maiorNum = 0;
+let impares = 0;
 let numero = 0;
 
 for (let i = 0; i < numbers.length; i += 1) {
   numero = numbers[i];
-  maiorNum = Math.max(maiorNum, numero)
+  if (numero % 2 != 0) {
+    impares += 1;
+  }
 }
-console.log(maiorNum)
+if (impares > 0) {
+  console.log(impares);
+}
+else {
+  console.log("nenhum valor ímpar encontrado");
+}

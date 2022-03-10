@@ -10,11 +10,8 @@
 
 // Exercicio 2
 
-let word = 'tryber';
-let newWord = null;
+let word = 'banana';
+let newWord = word.split('').reverse().join('')  
+// Fonte: https://stackoverflow.com/questions/958908/how-do-you-reverse-a-string-in-place-in-javascript
 
-for (let index = word.length; index > 0; index -= 1) {
-  let char = word.slice(index);
-  newWord = ;
-}
 console.log(newWord);

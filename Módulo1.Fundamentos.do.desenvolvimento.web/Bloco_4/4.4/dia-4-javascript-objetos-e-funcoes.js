@@ -12,3 +12,9 @@ let info = {
 
 info.recorrente = 'Sim';
 console.log(info);
+
+// Exercício 4
+
+for (dado in info) {
+  console.log(info[dado]);
+}

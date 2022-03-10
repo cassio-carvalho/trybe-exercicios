@@ -13,8 +13,14 @@ let info = {
 info.recorrente = 'Sim';
 console.log(info);
 
-// Exercício 4
+// Exercício 3
 
 for (dado in info) {
-  console.log(info[dado]);
+  console.log(dado);
 }
+
+// Exercício 4
+
+// for (dado in info) {
+//   console.log(info[dado]);
+// }

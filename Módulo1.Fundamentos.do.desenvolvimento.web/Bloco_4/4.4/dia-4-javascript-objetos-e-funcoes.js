@@ -15,12 +15,32 @@ console.log(info);
 
 // Exercício 3
 
-for (dado in info) {
-  console.log(dado);
-}
+// for (dado in info) {
+//   console.log(dado);
+// }
 
 // Exercício 4
 
 // for (dado in info) {
 //   console.log(info[dado]);
 // }
+
+// Exercício 5
+
+let info2 = {
+  personagem: 'Tio Patinhas',
+  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim',
+};
+
+function imprimeAmbos (d1, d2) {
+  for (dado in d1) {
+    console.log(d1[dado])
+  }
+  for (dado in d2) {
+    console.log(d2[dado])
+  }
+}
+
+imprimeAmbos (info, info2);

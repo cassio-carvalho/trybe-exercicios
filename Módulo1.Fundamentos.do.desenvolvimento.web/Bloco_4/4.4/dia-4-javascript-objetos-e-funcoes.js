@@ -1,8 +1,8 @@
-let info = {
-  personagem: 'Margarida',
-  origem: 'Pato Donald',
-  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-};
+// let info = {
+//   personagem: 'Margarida',
+//   origem: 'Pato Donald',
+//   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+// };
 
 // Exercício 1
 
@@ -10,8 +10,8 @@ let info = {
 
  // Exercício 2
 
-info.recorrente = 'Sim';
-console.log(info);
+// info.recorrente = 'Sim';
+// console.log(info);
 
 // Exercício 3
 
@@ -26,6 +26,14 @@ console.log(info);
 // }
 
 // Exercício 5
+let info = {
+  personagem: 'Margarida',
+  origem: 'Pato Donald',
+  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+};
+
+info.recorrente = 'Sim';
+console.log(info);
 
 let info2 = {
   personagem: 'Tio Patinhas',
@@ -35,12 +43,14 @@ let info2 = {
 };
 
 function imprimeAmbos (d1, d2) {
-  for (dado in d1) {
-    console.log(d1[dado])
+  for (dado in d1, d2) {
+
+    console.log(d1[dado] + ' e ' + d2[dado])
   }
-  for (dado in d2) {
-    console.log(d2[dado])
-  }
-}
+}  
+//   for (dado in d2) {
+//     console.log(d2[dado])
+//   }
+// }
 
 imprimeAmbos (info, info2);

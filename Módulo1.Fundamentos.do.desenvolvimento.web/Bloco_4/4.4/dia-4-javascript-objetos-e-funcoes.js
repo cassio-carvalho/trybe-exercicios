@@ -43,14 +43,13 @@ let info2 = {
 };
 
 function imprimeAmbos (d1, d2) {
-  for (dado in d1, d2) {
-
-    console.log(d1[dado] + ' e ' + d2[dado])
+  for (dado in d1) {
+    if (dado === 'recorrente' && d1[dado] === 'Sim' && d2[dado] === 'Sim'){
+      console.log('Ambos recorrentes');
+    }
+    else {
+      console.log(d1[dado] + ' e ' + d2[dado]);
+    }
   }
-}  
-//   for (dado in d2) {
-//     console.log(d2[dado])
-//   }
-// }
-
+}
 imprimeAmbos (info, info2);

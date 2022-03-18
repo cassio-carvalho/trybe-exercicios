@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="corpo">
+    <script>
+      //1. Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+      let body = document.getElementById("corpo");
+      let bodyNovo = document.createElement("h1");
+      bodyNovo.innerText = "Exercício 5.2 - JavaScript DOM";
+      body.appendChild(bodyNovo);
+      console.log(body);
+
+      // 2. Adicione a tag main com a classe main-content como filho da tag body ;
+      let mainNova = document.createElement("main");
+      body.appendChild(mainNova);
+      let main = body.lastElementChild;
+      main.classList.add("main-content");
+
+      //3. Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+      let sectionNova = document.createElement("section");
+      main.appendChild(sectionNova);
+      let section = main.firstChild;
+      section.classList.add("center-content");
+
+      //4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      let pNova = document.createElement("p");
+      section.appendChild(pNova);
+      let p = section.firstChild;
+      p.innerText =
+        "Elden Ring é um jogo eletrônico de RPG de ação desenvolvido pela FromSoftware e publicado pela Bandai Namco Entertainment. O jogo é um projeto colaborativo entre o diretor Hidetaka Miyazaki e o romancista de fantasia George R. R. Martin.";
+
+      //5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+      let sectionNova2 = document.createElement("section");
+      main.appendChild(sectionNova2);
+      let section2 = main.children[1];
+      section2.classList.add("left-content");
+
+      //6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+      let sectionNova3 = document.createElement("section");
+      main.appendChild(sectionNova3);
+      let section3 = main.children[2];
+      section3.classList.add("right-content");
+
+      //7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+      let fotoNova = document.createElement("img");
+      section2.appendChild(fotoNova);
+      let foto = section2.firstChild;
+      foto.classList.add('small-image');
+      foto.src = "https://picsum.photos/200";
+    </script>
+  </body>
+</html>
